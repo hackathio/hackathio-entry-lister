@@ -57,18 +57,12 @@
  </style>
    <ul class="portfolio">
    {% for repo in site.github.public_repositories.forks limit:28 %}
-
-          <li class="repo">
-
-              <h3><a href="{{ repo.url }}">{{ repo.name }}</a></h3>
-              <p>{{ repo.description }}</p>
-
-          </li>
-          <aside class="details">
-              <span>Stars {{ repo.stargazers_count }}</span>
-          </aside>
-
-   {% endfor %}
+            <li class="repo">
+               
+                <a href="{{ repo.homepage }}">{{ repo.name }}</a>
+             
+            </li>
+    {% endfor %}
    </ul>
 
  </body>
