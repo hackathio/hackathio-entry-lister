@@ -61,9 +61,13 @@
 
           <li class="repo">
 
-              <a href="{{ repo.url }}">{{ repo.name }}</a>
+              <h3><a href="{{ repo.url }}">{{ repo.name }}</a></h3>
+              <p>{{ repo.description }}</p>
 
           </li>
+          <aside class="details">
+              <span>Stars {{ repo.stargazers_count }}</span>
+          </aside>
 
    {% endfor %}
    </ul>
