@@ -4,4 +4,3 @@ _site/
 # Ignore repo files
 exclude:
 - README.md
-repository: hackathio/hackathio-entry-lister
